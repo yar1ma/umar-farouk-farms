@@ -1,4 +1,5 @@
 import {supportWhatsappNumber} from "../config"
+import { Link } from 'react-router-dom'
 
 // Footer: business name, quick links, contact placeholders, copyright
 function Footer() {
@@ -23,6 +24,10 @@ function Footer() {
           <p className="text-sm">Instagram: coming soon</p>
         </div>
       </div>
+      <div className="flex justify-center gap-4 text-sm mt-4">
+  <Link to="/privacy-policy" className="underline">Privacy Policy</Link>
+  <Link to="/terms-and-conditions" className="underline">Terms and Conditions</Link>
+</div>
       <p className="text-center text-sm text-gray-500 mt-10">© 2026 Umar Farouk Farms. All rights reserved.</p>
     </footer>
   )

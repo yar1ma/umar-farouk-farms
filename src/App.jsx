@@ -1,26 +1,21 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Services from './components/Services'
-import FeaturedLivestock from './components/FeaturedLivestock'
-import HowItWorks from './components/HowItWorks'
-import About from './components/About'
-import Contact from './components/Contact'
 import Footer from './components/Footer'
-import ContactForm from './components/ContactForm'
+import Home from './pages/Home'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsAndConditions from './pages/TermsAndConditions'
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <BrowserRouter>
       <Navbar />
-      <Hero />
-      <Services />
-      <FeaturedLivestock />
-      <HowItWorks />
-      <About />
-      <ContactForm />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+      </Routes>
       <Footer />
-    </div>
+    </BrowserRouter>
   )
 }
 
