@@ -4,6 +4,7 @@ import Services from './components/Services'
 import FeaturedLivestock from './components/FeaturedLivestock'
 import HowItWorks from './components/HowItWorks'
 import About from './components/About'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <FeaturedLivestock />
       <HowItWorks />
       <About />
+      <Contact />
     </div>
   )
 }
