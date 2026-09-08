@@ -1,10 +1,15 @@
 import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import Services from './components/Services'
+import FeaturedLivestock from './components/FeaturedLivestock'
 
-// Main app: renders the navbar, page content goes below it
 function App() {
   return (
     <div className="min-h-screen bg-gray-100">
       <Navbar />
+      <Hero />
+      <Services />
+      <FeaturedLivestock />
     </div>
   )
 }
