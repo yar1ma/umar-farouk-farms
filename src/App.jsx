@@ -5,6 +5,8 @@ import FeaturedLivestock from './components/FeaturedLivestock'
 import HowItWorks from './components/HowItWorks'
 import About from './components/About'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
+import ContactForm from './components/ContactForm'
 
 function App() {
   return (
@@ -15,7 +17,9 @@ function App() {
       <FeaturedLivestock />
       <HowItWorks />
       <About />
+      <ContactForm />
       <Contact />
+      <Footer />
     </div>
   )
 }
