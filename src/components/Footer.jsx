@@ -1,3 +1,5 @@
+import {supportWhatsappNumber} from "../config"
+
 // Footer: business name, quick links, contact placeholders, copyright
 function Footer() {
   return (
@@ -13,6 +15,7 @@ function Footer() {
           <h3 className="text-white font-semibold mb-3">Contact</h3>
           <p className="text-sm">Phone: coming soon</p>
           <p className="text-sm">Location: coming soon</p>
+          <a href={`https://wa.me/${supportWhatsappNumber}`} className="text-sm underline">Website help</a>
         </div>
         <div>
           <h3 className="text-white font-semibold mb-3">Follow Us</h3>
