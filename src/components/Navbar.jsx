@@ -1,4 +1,5 @@
 import { useState } from 'react' // hook to store toggle state
+import { whatsappNumber } from '../config' // business WhatsApp number for inquiries
 
 // Site-wide navigation bar with logo, links, and WhatsApp CTA
 function Navbar() {
@@ -26,7 +27,7 @@ function Navbar() {
 
         {/* WhatsApp button, same visibility rule as desktop links */}
         
-        <a href="#" className="hidden md:inline-block bg-green-700 text-white px-4 py-2 rounded font-medium">
+        <a href={`https://wa.me/${whatsappNumber}`} className="hidden md:inline-block bg-green-700 text-white px-4 py-2 rounded font-medium">
         Chat on WhatsApp
         </a>
 
@@ -49,7 +50,7 @@ function Navbar() {
           <a href="/contact">Contact</a>
           {/* WhatsApp button repeated here since desktop one is hidden on mobile */}
           
-            <a href="#" className="bg-green-700 text-white px-4 py-2 rounded font-medium text-center">
+            <a href= {`https://wa.me/${whatsappNumber}`}  className="bg-green-700 text-white px-4 py-2 rounded font-medium text-center">
             Chat on WhatsApp
           </a>
         </div>

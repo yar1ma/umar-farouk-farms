@@ -1,3 +1,5 @@
+import {whatsappNumber} from "../config"
+
 // Displays one livestock listing as a card. Receives the animal's data as a prop.
 function LivestockCard({ animal }) {
   return (
@@ -9,7 +11,9 @@ function LivestockCard({ animal }) {
         <p className="text-gray-600 mb-3">{animal.description}</p>
         <div className="flex items-center justify-between">
           <span className="text-green-700 font-medium">{animal.price}</span>
-          <a href="#" className="text-sm text-green-700 underline">View Details</a>
+          <a href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`Hello Umar Farouk Farms, I am interested in the ${animal.type} (${animal.breed}). Is it still available?`)}`} className="text-sm text-green-700 underline">
+  Ask on WhatsApp
+</a>
         </div>
       </div>
     </div>

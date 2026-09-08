@@ -1,3 +1,5 @@
+import { whatsappNumber } from "../config"
+
 // Hero section: first thing visitors see, main message and call-to-action buttons
 function Hero() {
   return (
@@ -6,7 +8,7 @@ function Hero() {
       <p className="text-gray-600 max-w-xl mx-auto mb-8">Umar Farouk Farms connects customers with quality livestock and practical farm services across Ghana.</p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <a href="/livestock" className="bg-green-700 text-white px-6 py-3 rounded font-medium">Browse Livestock</a>
-        <a href="#" className="border border-green-700 text-green-700 px-6 py-3 rounded font-medium">Talk to Us</a>
+        <a href={`https://wa.me/${whatsappNumber}`} className="border border-green-700 text-green-700 px-6 py-3 rounded font-medium">Talk to Us</a>
       </div>
     </section>
   )
