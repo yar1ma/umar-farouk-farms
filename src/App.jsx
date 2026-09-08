@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import Services from './components/Services'
 import FeaturedLivestock from './components/FeaturedLivestock'
 import HowItWorks from './components/HowItWorks'
+import About from './components/About'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Services />
       <FeaturedLivestock />
       <HowItWorks />
+      <About />
     </div>
   )
 }
