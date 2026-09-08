@@ -2,7 +2,7 @@
 function LivestockCard({ animal }) {
   return (
     <div className="border border-gray-200 rounded overflow-hidden">
-      <div className="bg-gray-200 h-40 flex items-center justify-center text-gray-500">Photo placeholder</div>
+      <img src={animal.image} alt={`${animal.type} - ${animal.breed}`} className="w-full h-40 object-cover" />
       <div className="p-4">
         <h3 className="text-lg font-semibold text-gray-800">{animal.type} — {animal.breed}</h3>
         <p className="text-sm text-gray-600 mb-2">{animal.location} · {animal.age} · {animal.sex}</p>

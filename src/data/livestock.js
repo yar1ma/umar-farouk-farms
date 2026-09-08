@@ -11,6 +11,7 @@ const livestock = [
     price: 'Contact for price',
     availability: 'Available',
     description: 'Healthy, well-fed bull ready for sale.',
+    image: '/images/cattle_1.jpg',
   },
   {
     id: 2,
@@ -23,6 +24,7 @@ const livestock = [
     price: 'Contact for price',
     availability: 'Available',
     description: 'Good breeding stock, vaccinated.',
+    image: '/images/cattle_2.jpg',
   },
   {
     id: 3,
@@ -35,6 +37,7 @@ const livestock = [
     price: 'Contact for price',
     availability: 'Available',
     description: 'Strong, healthy ram.',
+    image: '/images/cattle_3.jpg',
   },
 ]
 
